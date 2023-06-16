@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Congratulations on Your Graduation!</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #8a77a8;
+            font-size: 48px;
+            margin-top: 100px;
+        }
+
+        p {
+            color: #8a77a8;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .confetti {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .confetti-piece {
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            position: absolute;
+            top: -10px;
+            animation: confetti-fall 4s infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+            }
+        }
+
+        .fun-fact {
+            font-size: 20px;
+            color: #8a77a8;
+            margin-top: 50px;
+        }
+
+        .youtube-button {
+            background-color: #8a77a8;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .youtube-button:hover {
+            background-color: #683c77;
+        }
+    </style>
+</head>
+<body>
+    <h1>Congratulations on Your Graduation!</h1>
+    <p>Thank you for your hard work and dedication.<br> May your future be filled with success and happiness.</p>
+
+    <div class="confetti">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <!-- Add more div elements with class "confetti-piece" as desired -->
+    </div>
+
+    <p class="fun-fact">Fun Fact: Did you know that the word "graduation" is derived from the Latin word "gradus" which means "step" or "degree"? So, today you are taking a significant step forward in your journey!</p>
+
+    <a class="youtube-button" href="https://youtu.be/bpEN-qWMolY" target="_blank">Watch Graduation Video</a>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
